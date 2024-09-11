@@ -1,0 +1,10 @@
+name: alayshia-webapp-mssql
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+description: A minimal Azure Native TypeScript Pulumi program
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: azure-typescript

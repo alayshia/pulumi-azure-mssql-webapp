@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Question App</title>
+</head>
+<body>
+    <h1>Answer a Random Question</h1>
+    <form id="question-form">
+        <label for="question">Random Question: </label>
+        <span id="question"></span> 
+        <br><br>
+        <label for="answer">Your Answer: </label>
+        <input type="text" id="answer" name="answer" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>All Questions and Answers</h2>
+    <button id="load-questions">Load Questions</button>
+    <ul id="questions-list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

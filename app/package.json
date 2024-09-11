@@ -1,0 +1,14 @@
+{
+  "name": "question-answer-app",
+  "version": "1.0.0",
+  "description": "A simple app to ask questions, store answers, and retrieve them.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "zip": "zip -r ../app.zip *"
+  },
+  "dependencies": {
+    "express": "^4.20.0",
+    "mssql": "^11.0.1"
+  }
+}

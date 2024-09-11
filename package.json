@@ -1,0 +1,16 @@
+{
+    "name": "alayshia-webapp-mssql",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^18",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@pulumi/azure-native": "^2.0.0",
+        "@pulumi/pulumi": "^3.113.0",
+        "@pulumiverse/mssql": "^0.0.8"
+    },
+    "scripts": {
+        "zip": "zip -r app.zip app/"
+    }
+}
