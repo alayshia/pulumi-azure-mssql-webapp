@@ -102,9 +102,8 @@ Set up your Pulumi configurations:
 ```bash
 pulumi config set sqladmin <your-sql-admin>
 pulumi config set sqlPassword --secret <your-sql-password>
-pulumi config set location <azure-location>
 pulumi config set owner <your-username-or-email>
-pulumi config set azure-native:location<>
+pulumi config set azure-native:location <azure-location>
 ```
 
 Replace `<your-sql-admin>`, `<your-sql-password>`, `<azure-location>`,  `<your-username-or-email>` with your values.
