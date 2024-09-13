@@ -2,7 +2,7 @@
   "name": "question-answer-app",
   "version": "1.0.0",
   "description": "A simple app to ask questions, store answers, and retrieve them.",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "zip": "zip -r ../app.zip *"

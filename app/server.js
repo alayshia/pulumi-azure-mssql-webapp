@@ -22,7 +22,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Creates a table if it does not exists
+// Creates table if it does not exists
 async function createTableIfNotExists() {
     try {
         let pool = await sql.connect(config);

@@ -1,4 +1,4 @@
-name: alayshia-webapp-mssql
+name: group2-webapp-mssql
 runtime:
   name: nodejs
   options:
