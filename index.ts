@@ -23,7 +23,7 @@ const stack = pulumi.getStack();
 
 const stackTag = new pulumiservice.StackTag(owner,
     {
-        name: "stack owner",
+        name: "stack-owner",
         organization: organization,
         project: project,
         stack: stack,
@@ -83,6 +83,16 @@ const providerMssql = new mssql.Provider("providerMssql", {
 const databaseId = mssql.getDatabaseOutput({
     name: sqlDatabase.name,
 }, { provider: providerMssql });
+
+
+// Create a new SQL User
+const dbUser = new mssql.SqlLogin("db-user", {
+    name: "test",
+    password: sqlPassword,
+}, {
+    provider: providerMssql,
+});
+
 
 // Create a Storage Account for storing the app package with tags
 const storageAccount = new storage.StorageAccount("appstorage", {
