@@ -31,12 +31,8 @@ const stackTag = new pulumiservice.StackTag(owner,
     }
 );
 
-// Gets Azure client configuration for AD Administrator setup
-const current = azure.authorization.getClientConfig();
-
 // Create a Resource Group with tags
 const resourceGroup = new azure.resources.ResourceGroup("resource-group", {
-    location: "WestUS",
     tags: standardTags,
 });
 

@@ -1,5 +1,5 @@
 /bin/
 /node_modules/
-Pulumi.dev.yaml
+Pulumi.*.yaml
 *module*
 notes.md

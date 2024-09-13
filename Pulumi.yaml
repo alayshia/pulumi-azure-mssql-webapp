@@ -1,4 +1,4 @@
-name: group2-webapp-mssql
+name: group1-webapp-mssql
 runtime:
   name: nodejs
   options:
